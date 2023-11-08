@@ -31,7 +31,6 @@ const Layout: React.FC<{
 
   return (
     <div className="flex font-poppins grid-cols-3 text-[#202020] flex-row h-full max-w-[1440px] mx-auto font-sans">
-
       {/* menu */}
       <div
         className={`w-[94px] bg-[#FBFAFF] h-[100vh] top-0  z-[5]  fixed leftNav transition-all ease-in-out overflow-auto ${
@@ -138,11 +137,9 @@ const Layout: React.FC<{
             placeholder="Search anything..."
             className="bg-[#F3F7FA] rounded-[7px] text-[#23235F] text-sm pl-[10px] md:pl-[20px] pr-[40px] py-[10px] w-[180px] md:w-[290px] placeholder:text-[#23235F] hidden md:block"
           />
-          <img
-            src="/images/search.svg"
-            alt=""
-            className="pl-[-50px] absolute right-1 md:right-4 top-[10px]"
-          />
+          <button className="pl-[-50px] absolute right-1 md:right-4 top-[10px]">
+            <img src="/images/search.svg" alt="" className="" />
+          </button>
         </div>
         <div className="flex ">
           <button onClick={toggleChat}>
