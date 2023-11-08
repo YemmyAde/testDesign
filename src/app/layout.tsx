@@ -10,6 +10,7 @@ const Layout: React.FC<{
   const [windowWidth, setWindowWidth] = useState<number>();
 
   useEffect(() => {
+    setWindowWidth(window.innerWidth);
     const updateWindowWidth = () => {
       setWindowWidth(window.innerWidth);
     };
@@ -19,16 +20,20 @@ const Layout: React.FC<{
     return () => {
       window.removeEventListener("resize", updateWindowWidth);
     };
-  });
+  }, []);
   const toggleMenu = () => {
-    setShowMenu(!showMenu);
-    setRightDiv(false);
+    if (windowWidth! <= 768) {
+      setShowMenu(!showMenu);
+      setRightDiv(false);
+    }
+    
   };
   const toggleChat = () => {
-    setRightDiv(!rightDiv);
-    setShowMenu(false);
+    if (windowWidth! <= 1024) {
+      setRightDiv(!rightDiv);
+      setShowMenu(false);
+    }
   };
-
   return (
     <div className="flex font-poppins grid-cols-3 text-[#202020] flex-row h-full max-w-[1440px] mx-auto font-sans">
       {/* menu */}
