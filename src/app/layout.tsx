@@ -153,7 +153,7 @@ const Layout: React.FC<{
             <img
               src="/images/dropdown.svg"
               alt=""
-              className={` ${!rightDiv && windowWidth! <= 1024 && "flip"} `}
+              className={` ${!rightDiv && windowWidth! <= 1023 && "flip"} `}
             />
           </button>
         </div>
