@@ -1,17 +1,16 @@
 # Getting Started with Create React App
 
-This is a React, Typescript and tailwind css starter pack. (https://github.com/facebook/create-react-app).
+This is a React, Typescript and tailwind css project
 
 ## Available Scripts
 
-In the project directory, you can run to install all packages:
+To install all packages, in the project directory run 
 ### `npm i`
 
-In the project directory, you can run:
+To start the project in a local server run:
 
-### `npm start`
+### `npm run start`
 
-Check src -> routes -> index.tsx for page routing
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
