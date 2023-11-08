@@ -143,9 +143,9 @@ const Layout: React.FC<{
         </div>
         <div className="flex ">
           <button onClick={toggleChat}>
-            <img src="/images/notify.svg" alt="" className="mr-4 md:mr-8" />
+            <img src="/images/notify.svg" alt="" className="" />
           </button>
-          <div className="w-[40px] h-[40px] bg-[#e5fdf6] rounded-full flex justify-center items-center mr-4">
+          <div className="w-[40px] h-[40px] bg-[#e5fdf6] rounded-full flex justify-center items-center ml-4 md:ml-8 mr-4">
             <img src="/images/profile_img.svg" alt="" className="" />
           </div>
 
@@ -153,7 +153,7 @@ const Layout: React.FC<{
             <img
               src="/images/dropdown.svg"
               alt=""
-              className={` ${!rightDiv && windowWidth! <= 1023 && "flip"} `}
+              className={` ${!rightDiv && windowWidth! <= 1024 && "flip"} `}
             />
           </button>
         </div>
@@ -161,8 +161,8 @@ const Layout: React.FC<{
 
       {/* body */}
       <div
-        className=" text-[#fff] w-full min-h-[100vh] bg-[#f3f4f8] relative top-[76px]  md:pl-[94px] lg:pr-[396px] py-[30px]  
-       overscroll-x-hidden box-border"
+        className=" text-[#fff] w-full min-h-[100vh] bg-[#f3f4f8] relative top-[76px]  md:pl-[94px]  py-[30px]  
+       overscroll-x-hidden box-border main"
       >
         <div className="w-[100%] max-w-[100%] px-[20px] md:px-[40px] ">
           {children}

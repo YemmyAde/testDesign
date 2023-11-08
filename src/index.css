@@ -87,8 +87,14 @@ input:active {
         right: 0;
     }
 }
-@media (max-width: 1023px) {
+@media (max-width: 1024px) {
     .rightNav {
             right: -396px;
         }
+}
+
+@media (min-width: 1025px) {
+    .main {
+        padding-right: 396px;
+    }
 }
